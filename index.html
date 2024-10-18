@@ -8,6 +8,8 @@
   <!-- tailwind and daisyUi cdn -->
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/e887c6c070.js" crossorigin="anonymous"></script>
   <!-- Poppins fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -39,9 +41,9 @@
 </head>
 <body class="poppins eb-garamond ">
   <!-- header part start  -->
-  <header class="mx-auto px-20">
+  <header class="container mx-auto">
     <!-- Nav styles -->
-    <div class="navbar bg-base-100">
+    <div class="navbar bg-base-100 ">
       <div class="navbar">
         <div class="dropdown">
           <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -77,7 +79,7 @@
       </div>
     </div>
     <!-- banner styles -->
-    <div class="relative bg-gray-800 lg:h-[550px] lg:w-[1170px] m-auto">
+    <div class="relative bg-gray-800 lg:h-[550px] lg:w-[1280px]">
       <img src="images/banner.png" alt="Banner" class="absolute inset-0 w-full h-full object-cover opacity-50">
       <div class="relative z-10 flex items-center justify-center h-full">
         <div class=" space-y-6 w-[692px] text-center">
@@ -95,9 +97,9 @@
     </div>
 
   </header>
-  <main class="mx-auto">
+  <main class="container mx-auto">
     <!--Legal Area Section-->
-    <section class=" text-center mt-20">
+    <section class=" text-center my-24">
       <h3 class="font-extrabold text-4xl text-[#414040]">
         The Legal Practice Area
       </h3>
@@ -106,16 +108,94 @@
         some form, by injected humour.
       </p>
       <!-- Legal contain -->
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ">
-        <div class="card bg-base-100 w-96 shadow-xl">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        <!-- Business Law -->
+        <div class="card bg-base-100 p-10 mt-5 ">
           <figure>
-            <img src="images/business.png" alt="Shoes" />
+            <img
+              src="images/business.png"
+              alt="Shoes" class="w-16" />
           </figure>
-          <div class="card-body">
-            <h2 class="card-title">Business Law</h2>
-            <p class="">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
-            <div class="card-actions justify-end">
-              <button class="btn btn-primary">Buy Now</button>
+          <div class="text-center space-y-5 mt-5">
+            <h2 class="font-extrabold text-3xl text-[#414040]">Business Law</h2>
+            <p class="font-normal text-base text-[#707070]">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+            <div class="card-actions justify-center">
+              <button class="btn bg-btn-color rounded-full text-white"><i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+        <!-- Criminal Law -->
+        <div class="card bg-base-100  p-10 mt-5">
+          <figure>
+            <img
+              src="images/criminal.png"
+              alt="Shoes" class="w-16" />
+          </figure>
+          <div class="text-center space-y-5 mt-5">
+            <h2 class="font-extrabold text-3xl text-[#414040]">Criminal Law</h2>
+            <p class="font-normal text-base text-[#707070]">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+            <div class="card-actions justify-center">
+              <button class="btn bg-btn-color rounded-full text-white"><i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+        <!-- Child Support -->
+        <div class="card bg-base-100   p-10 mt-5">
+          <figure>
+            <img
+              src="images/child.png"
+              alt="Shoes" class="w-16" />
+          </figure>
+          <div class="text-center space-y-5 mt-5">
+            <h2 class="font-extrabold text-3xl text-[#414040]">Child Support</h2>
+            <p class="font-normal text-base text-[#707070]">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+            <div class="card-actions justify-center">
+              <button class="btn bg-btn-color rounded-full text-white"><i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+        <!-- Education Law -->
+        <div class="card bg-base-100   p-10 mt-5">
+          <figure>
+            <img
+              src="images/education.png"
+              alt="Shoes" class="w-16" />
+          </figure>
+          <div class="text-center space-y-5 mt-5">
+            <h2 class="font-extrabold text-3xl text-[#414040]">Education Law</h2>
+            <p class="font-normal text-base text-[#707070]">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+            <div class="card-actions justify-center">
+              <button class="btn bg-btn-color rounded-full text-white"><i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+        <!-- Divorce Law -->
+        <div class="card bg-base-100   p-10 mt-5">
+          <figure>
+            <img
+              src="images/divorce.png"
+              alt="Shoes" class="w-16" />
+          </figure>
+          <div class="text-center space-y-5 mt-5">
+            <h2 class="font-extrabold text-3xl text-[#414040]">Divorce Law</h2>
+            <p class="font-normal text-base text-[#707070]">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+            <div class="card-actions justify-center">
+              <button class="btn bg-btn-color rounded-full text-white"><i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+        <!-- Tax Law -->
+        <div class="card bg-base-100   p-10 mt-5">
+          <figure>
+            <img
+              src="images/tax.png"
+              alt="Shoes" class="w-16" />
+          </figure>
+          <div class="text-center space-y-5 mt-5">
+            <h2 class="font-extrabold text-3xl text-[#414040]">Tax Law</h2>
+            <p class="font-normal text-base text-[#707070]">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+            <div class="card-actions justify-center">
+              <button class="btn bg-btn-color rounded-full text-white"><i class="fa-solid fa-arrow-right"></i></button>
             </div>
           </div>
         </div>
